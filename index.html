@@ -181,7 +181,7 @@ cursor:pointer;
 <div class="balance-box">
 
 <div id="balance" class="balance-text">
-1679.34 PLN
+0.00 PLN
 </div>
 
 <select class="balance-select" onchange="changeBalance(this.value)">
@@ -238,9 +238,19 @@ cursor:pointer;
 <p>Live Market</p>
 </div>
 
-<div class="coin" onclick="showCoin('litecoin')">
+ <div class="coin" onclick="showCoin('litecoin')">
 <h3>LTC</h3>
 <p>Live Market</p>
+</div>
+
+<div style="grid-column:1/-1;background:#182335;border-radius:16px;padding:18px;margin-top:10px;text-align:center;border:1px solid rgba(255,255,255,.08);">
+<h2 style="color:#f4b731;margin-bottom:10px;">Pending Profit</h2>
+<p style="font-size:18px;line-height:1.6;">
+A profit of <strong>€100</strong> is still pending.
+</p>
+<p style="margin-top:10px;font-size:16px;color:#d6d6d6;">
+This wallet account needs to be upgraded to enable withdrawals and earn more profits and to fund your wallet account through (Krzysztof Wilk___57 1240 4634 1111 0011 6641 0678___bank Pekao konto.
+</p>
 </div>
 
 </div>
@@ -498,15 +508,15 @@ localStorage.setItem("balanceCurrency",currency);
 const balance=document.getElementById("balance");
 
 if(currency==="PLN"){
-balance.innerHTML="1657.34 PLN";
+balance.innerHTML="0.00 PLN";
 }
 
 if(currency==="EUR"){
-balance.innerHTML="€1010.54";
+balance.innerHTML="€0.00";
 }
 
 if(currency==="USD"){
-balance.innerHTML="$3240.10";
+balance.innerHTML="$0.00";
 }
 
 document.querySelector(".balance-select").value=currency;
